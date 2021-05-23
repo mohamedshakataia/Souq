@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 class jumia(models.Model):
     title = models.CharField(max_length=300, blank=True, null=True)
@@ -13,7 +14,6 @@ class jumia(models.Model):
     category=models.ForeignKey('Category',verbose_name="category", related_name="category",on_delete=models.CASCADE)
 
  
-
     def __str__(self):
         return self.title
     class Meta:

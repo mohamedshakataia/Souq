@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'setting',
     'django_filters',
     "bootstrap4",
+
 ]
 
 MIDDLEWARE = [
@@ -69,8 +70,11 @@ TEMPLATES = [
                 'utils.context.get_nav',
             ],
         },
+
     },
 ]
+
+
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
